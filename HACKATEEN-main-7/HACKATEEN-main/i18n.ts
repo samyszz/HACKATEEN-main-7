@@ -1,13 +1,13 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Todos os imports agora apontam para a mesma pasta './messages/'
+
 import en from './messages/en.json';
 import es from './messages/es.json';
 import fr from './messages/fr.json';
 import pt from './messages/pt.json';
-import ar from './messages/ar.json'; // CORRIGIDO
-import zh from './messages/zhh.json'; // CORRIGIDO
+import ar from './messages/ar.json';
+import zh from './messages/zhh.json'; 
 
 const resources = {
   en: { translation: en },
@@ -22,10 +22,10 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'pt', // Idioma padrão definido para Português
-    fallbackLng: 'pt',
+    lng: 'pt', 
+    fallbackLng: 'pt', 
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, 
     },
   });
 
